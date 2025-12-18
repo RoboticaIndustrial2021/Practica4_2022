@@ -21,8 +21,8 @@ frame1= RDK.Item("fr1",ITEM_TYPE_FRAME)
 robot.setPoseFrame(cajas)
 
 #Definir Target
-Pick=RDK.Item('pick')
-Place=RDK.Item('place')
+Pick=RDK.Item('aprox')
+Place=RDK.Item('pick_place')
 
 
 #Movimiento
