@@ -45,5 +45,6 @@ ToolGC.DetachAll(frame1)
 robot.setTool(ToolGO)
 sleep(1)
 
+robot.MoveJ(aproxx)
 robot.setPoseFrame(cajas)
 robot.MoveJ(aproxx)
