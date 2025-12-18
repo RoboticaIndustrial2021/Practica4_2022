@@ -21,7 +21,7 @@ frame1= RDK.Item("fr1",ITEM_TYPE_FRAME)
 robot.setPoseFrame(cajas)
 
 #Definir Target
-Pick_Place=RDK.Item("box").Pose()*rotx(pi)
+Pick_Place=RDK.Item("Part").Pose()*rotx(pi)
 aproxx= Pick_Place*transl(0,0,-100)
 
 
