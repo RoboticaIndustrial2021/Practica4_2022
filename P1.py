@@ -21,23 +21,24 @@ frame1= RDK.Item("fr1",ITEM_TYPE_FRAME)
 robot.setPoseFrame(cajas)
 
 #Definir Target
-Pick=RDK.Item('aprox')
-Place=RDK.Item('pick_place')
+aproxx=RDK.Item('aprox')
+Pick_Place=RDK.Item('pick_place')
 
 
 #Movimiento
 
-robot.MoveJ(Pick)
-robot.MoveJ(Place)
+robot.MoveJ(aproxx)
+robot.MoveJ(Pick_Place)
 ToolGO.setVisible(False)
 ToolGC.setVisible(True)
 robot.setTool(ToolGC)
 ToolGC.AttachClosest()
 sleep(1)
 
+robot.MoveJ(aproxx)
 robot.setPoseFrame(frame1)
-robot.MoveJ(Pick)
-robot.MoveJ(Place)
+robot.MoveJ(aproxx)
+robot.MoveJ(Pick_Place)
 ToolGO.setVisible(True)
 ToolGC.setVisible(False)
 ToolGC.DetachAll(frame1)
@@ -45,4 +46,4 @@ robot.setTool(ToolGO)
 sleep(1)
 
 robot.setPoseFrame(cajas)
-robot.MoveJ(Pick)
+robot.MoveJ(aproxx)
